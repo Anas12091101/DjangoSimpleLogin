@@ -20,7 +20,6 @@ class LoginView(View):
     form_class = LoginForm
 
     def get(self, request, *args, **kwargs):
-        print("jjj")
         form = self.form_class()
         return render(request=request, template_name=self.template_name, context={"form": form})
 
